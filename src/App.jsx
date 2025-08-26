@@ -271,7 +271,7 @@ async function descargarPDF() {
     className="flex items-center gap-2 rounded-2xl bg-white text-gray-800 border border-gray-300 px-4 py-2 text-sm hover:bg-gray-50">
     📥 Descargar PDF
   </button>
-  
+
   <button onClick={() => { navigator.clipboard.writeText(window.location.href); alert('Enlace copiado ✅'); }}
     className="flex items-center gap-2 rounded-2xl bg-white/0 text-white ring-1 ring-white/40 px-4 py-2 text-sm hover:bg-white/10">
     🔗 Compartir enlace
@@ -344,7 +344,7 @@ async function descargarPDF() {
 
       <footer className="mx-auto max-w-7xl px-6 pb-10 text-sm text-gray-500">
         <div className="rounded-2xl border border-gray-200 bg-white p-5">
-          <p>* Este directorio es referencial. Para rectificaciones o actualizaciones, comuníquese con Secretaría General.</p>
+          <p>* Este directorio es referencial. Para rectificaciones o actualizaciones, comuníquese con el Secretario de la IAL.</p>
         </div>
       </footer>
           </div>
