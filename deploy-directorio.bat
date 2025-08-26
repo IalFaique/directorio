@@ -20,7 +20,7 @@ npm run deploy
 
 echo ===========================================
 echo ✅ Proceso terminado. Verifica tu sitio en:
-echo https://tiounepinos.github.io/directoriofaique/
+echo https://ialfaique.github.io/directorio/
 echo ===========================================
 
 pause
