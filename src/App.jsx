@@ -227,7 +227,7 @@ async function descargarPDF() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* ENVOLTORIO PDF */}
-    <div id="pdf-capture"></div> 
+    <div id="pdf-capture">
 <header className="relative overflow-hidden">
   {/* Fondo: imagen + degradado en la misma propiedad */}
   <div
@@ -364,15 +364,15 @@ async function descargarPDF() {
           <p>* Este directorio es referencial. Para rectificaciones o actualizaciones, comuníquese con Secretaría General.</p>
         </div>
       </footer>
-
-      <style>{`
+          </div>
+  {/* FIN ENVOLTORIO PDF */}
+  <style>{`
         @media print {
           header, footer, section { display: none; }
           main { padding: 0; }
           .card { break-inside: avoid; }
         }
       `}</style>
-  {/* FIN ENVOLTORIO PDF */}
     </div>
   );
 }
