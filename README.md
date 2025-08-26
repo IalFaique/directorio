@@ -1,7 +1,6 @@
 # directoriofaique (React + Vite + GitHub Pages)
 
-URL final: https://tiounepinos.github.io/directoriofaique/
-
+URL final: https://ialfaique.github.io/directorio/
 ## Scripts
 - `npm run dev` — local
 - `npm run build` — producción
