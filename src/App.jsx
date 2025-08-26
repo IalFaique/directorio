@@ -160,15 +160,22 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
 <header className="relative overflow-hidden">
-  {/* Fondo con imagen + overlay degradado */}
+  {/* Fondo: imagen + degradado en la misma propiedad */}
   <div
-    className="absolute inset-0 bg-cover bg-center"
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
     style={{
-      backgroundImage: `url(${import.meta.env.BASE_URL}faique.jpg)`,
-      opacity: 0.50   // 👈 controla qué tan tenue/sombreado se ve
+      backgroundImage: `
+        linear-gradient(
+          to bottom right,
+          rgba(16,185,129,.70),   /* emerald-500 con 70% */
+          rgba(249,115,22,.70),   /* orange-500 con 70% */
+          rgba(239,68,68,.70)     /* red-500 con 70% */
+        ),
+        url(${import.meta.env.BASE_URL}faique.jpg)
+      `
     }}
   />
-  <div className="absolute inset-0 bg-gradient-to-br from-emerald-700 via-orange-500 to-red-500 opacity-70 pointer-events-none" />
+  {/* ¡Sin opacity aquí, así no tapa a los hijos! */}
 
   {/* Contenido encima */}
   <div className="relative mx-auto max-w-7xl px-6 py-14 text-white">
@@ -185,18 +192,18 @@ export default function App() {
     <p className="mt-2 max-w-2xl text-white/90">
       Directorio de Autoridades del distrito de San Miguel de El Faique
     </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <button onClick={() => window.print()} className="rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">Imprimir</button>
-            <button onClick={descargarJSON} className="rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">Exportar JSON</button>
-            <label className="cursor-pointer rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">
-              Importar JSON
-              <input type="file" accept="application/json" className="hidden" onChange={importarJSON} />
-            </label>
-          </div>
-          <p className="mt-4 text-xs text-white/80">Actualizado: {hoy}</p>
-        </div>
-      </header>
 
+    <div className="mt-6 flex flex-wrap gap-3">
+      <button onClick={() => window.print()} className="rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">Imprimir</button>
+      <button onClick={descargarJSON} className="rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">Exportar JSON</button>
+      <label className="cursor-pointer rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">
+        Importar JSON
+        <input type="file" accept="application/json" className="hidden" onChange={importarJSON} />
+      </label>
+    </div>
+    <p className="mt-4 text-xs text-white/80">Actualizado: {hoy}</p>
+  </div>
+</header>
       <section className="controls relative z-10 mx-auto max-w-7xl px-6 mt-6">
         <div className="grid grid-cols-1 gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm sm:grid-cols-3">
           <div className="sm:col-span-2">
