@@ -156,9 +156,78 @@ export default function App() {
     };
     reader.readAsText(file);
   }
+async function descargarPDF() {
+  // Cargamos dinámicamente para no engordar el bundle inicial
+  const [{ jsPDF }, html2canvas] = await Promise.all([
+    import('jspdf'),
+    import('html2canvas').then(m => m.default)
+  ]);
 
+  // Sección a capturar
+  const el = document.getElementById('pdf-capture');
+  if (!el) {
+    alert('No se encontró la sección a exportar');
+    return;
+  }
+
+  // Render a canvas con buena resolución
+  const canvas = await html2canvas(el, {
+    scale: 2,            // más nitidez
+    useCORS: true,
+    backgroundColor: '#ffffff'
+  });
+  const imgData = canvas.toDataURL('image/jpeg', 0.92);
+
+  // Documento A4 vertical
+  const pdf = new jsPDF('p', 'mm', 'a4');
+  const pageWidth  = pdf.internal.pageSize.getWidth();   // 210 mm
+  const pageHeight = pdf.internal.pageSize.getHeight();  // 297 mm
+
+  // Ajuste proporcional de la imagen al ancho de página
+  const imgWidth  = pageWidth;
+  const imgHeight = canvas.height * imgWidth / canvas.width;
+
+  // Encabezado (logo + título + fecha)
+  const logoUrl = `${import.meta.env.BASE_URL}escudo-mdsmf.png`;
+  const logoDataUrl = await fetch(logoUrl)
+    .then(r => r.blob())
+    .then(b => new Promise(res => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.readAsDataURL(b); }));
+
+  // Margen superior para el encabezado
+  const topMargin = 20; // mm
+  pdf.addImage(logoDataUrl, 'PNG', 10, 8, 14, 14);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(13);
+  pdf.text('Directorio de Autoridades - MDSMF', 28, 14);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(10);
+  const hoy = new Date().toLocaleDateString('es-PE', { year: 'numeric', month: 'long', day: '2-digit' });
+  pdf.text(`Actualizado: ${hoy}`, 28, 20);
+
+  // Agregamos la “foto” del contenido debajo del encabezado
+  let y = topMargin;               // posición vertical inicial (debajo del header)
+  let position = 0;                // desplazamiento vertical de la imagen
+  let heightLeft = imgHeight;      // alto de imagen que falta por colocar
+
+  // Primera página
+  pdf.addImage(imgData, 'JPEG', 0, y, imgWidth, imgHeight);
+  heightLeft -= (pageHeight - y);
+
+  // Paginado: mientras quede contenido, añade páginas y reubica la imagen
+  while (heightLeft > 0) {
+    pdf.addPage();
+    position += (pageHeight - y);
+    y = 10; // márgen pequeño en páginas siguientes (puedes repetir header si quieres)
+    pdf.addImage(imgData, 'JPEG', 0, -position + y, imgWidth, imgHeight);
+    heightLeft -= (pageHeight - y);
+  }
+
+  pdf.save('directorio_autoridades.pdf');
+}
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
+      {/* ENVOLTORIO PDF */}
+    <div id="pdf-capture"></div> 
 <header className="relative overflow-hidden">
   {/* Fondo: imagen + degradado en la misma propiedad */}
   <div
@@ -192,15 +261,41 @@ export default function App() {
     <p className="mt-2 max-w-2xl text-white/90">
       Directorio de Autoridades del distrito de San Miguel de El Faique
     </p>
+<div className="mt-6 flex flex-wrap gap-3">
+  {/* 🖨️ Imprimir */}
+  <button 
+    onClick={() => window.print()} 
+    className="flex items-center gap-2 rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition"
+  >
+    {/* ícono */}
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 9V2h12v7M6 18h12v4H6v-4zM6 14h12a2 2 0 002-2V9H4v3a2 2 0 002 2z"/>
+    </svg>
+    Imprimir
+  </button>
 
-    <div className="mt-6 flex flex-wrap gap-3">
-      <button onClick={() => window.print()} className="rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">Imprimir</button>
-      <button onClick={descargarJSON} className="rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">Exportar JSON</button>
-      <label className="cursor-pointer rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition">
-        Importar JSON
-        <input type="file" accept="application/json" className="hidden" onChange={importarJSON} />
-      </label>
-    </div>
+  {/* 📥 PDF real */}
+  <button 
+    onClick={descargarPDF} 
+    className="flex items-center gap-2 rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v12m0 0l-4-4m4 4l4-4m-9 8h10a2 2 0 002-2V8a2 2 0 00-2-2h-3.5a2 2 0 01-1.4-.6L9.5 2.6A2 2 0 008.1 2H6a2 2 0 00-2 2v16a2 2 0 002 2z"/>
+    </svg>
+    Descargar PDF
+  </button>
+
+  {/* 🔗 Compartir enlace */}
+  <button 
+    onClick={() => { navigator.clipboard.writeText(window.location.href); alert("Enlace copiado al portapapeles ✅"); }}
+    className="flex items-center gap-2 rounded-2xl bg-white/10 px-4 py-2 text-sm backdrop-blur hover:bg-white/20 transition"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71m-2.56 2.56L6.46 11.1a5 5 0 007.07 7.07l1.72-1.71"/>
+    </svg>
+    Compartir enlace
+  </button>
+</div>
     <p className="mt-4 text-xs text-white/80">Actualizado: {hoy}</p>
   </div>
 </header>
@@ -277,6 +372,7 @@ export default function App() {
           .card { break-inside: avoid; }
         }
       `}</style>
+  {/* FIN ENVOLTORIO PDF */}
     </div>
   );
 }
