@@ -159,9 +159,32 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-700 via-orange-500 to-red-500 opacity-90 pointer-events-none" />
-        <div className="relative mx-auto max-w-7xl px-6 py-14 text-white">
+<header className="relative overflow-hidden">
+  {/* Fondo con imagen + overlay degradado */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{
+      backgroundImage: `url(${import.meta.env.BASE_URL}ial-faique.jpg)`,
+      opacity: 0.35   // 👈 controla qué tan tenue/sombreado se ve
+    }}
+  />
+  <div className="absolute inset-0 bg-gradient-to-br from-emerald-700 via-orange-500 to-red-500 opacity-70 pointer-events-none" />
+
+  {/* Contenido encima */}
+  <div className="relative mx-auto max-w-7xl px-6 py-14 text-white">
+    <div className="flex items-center gap-3">
+      <img
+        src={`${import.meta.env.BASE_URL}escudo-mdsmf.png`}
+        alt="Escudo MDSMF"
+        className="h-12 w-12 rounded-lg ring-2 ring-white/60 bg-white/80 p-1"
+      />
+      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+        Directorio de Autoridades
+      </h1>
+    </div>
+    <p className="mt-2 max-w-2xl text-white/90">
+      Directorio de Autoridades del distrito de San Miguel de El Faique
+    </p>
           <div className="flex items-center gap-3">
             <img src={`${import.meta.env.BASE_URL}escudo-mdsmf.png`} alt="Escudo MDSMF" className="h-12 w-12 rounded-lg ring-2 ring-white/60 bg-white/80 p-1" />
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
@@ -182,7 +205,6 @@ export default function App() {
           <p className="mt-4 text-xs text-white/80">Actualizado: {hoy}</p>
         </div>
       </header>
-
       <section className="controls relative z-10 mx-auto max-w-7xl px-6 mt-6">
         <div className="grid grid-cols-1 gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm sm:grid-cols-3">
           <div className="sm:col-span-2">
