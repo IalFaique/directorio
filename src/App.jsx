@@ -160,18 +160,22 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
 <header className="relative overflow-hidden">
-  {/* Capa de fondo */}
-  <div className="absolute inset-0">
-    {/* Foto de la IAL como marca de agua */}
-    <img
-      src={`${import.meta.env.BASE_URL}faique.jpg`}
-      alt=""
-      className="w-full h-full object-cover"
-      style={{ opacity: 0.3 }}   // 👈 Opacidad de la foto (ajústala: 0.2–0.4)
-    />
-    {/* Overlay degradado institucional */}
-    <div className="absolute inset-0 bg-gradient-to-br from-emerald-700 via-orange-500 to-red-500 opacity-60" />
-  </div>
+  {/* Fondo: imagen + degradado en la misma propiedad */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: `
+        linear-gradient(
+          to bottom right,
+          rgba(16,185,129,.70),   /* emerald-500 con 70% */
+          rgba(249,115,22,.70),   /* orange-500 con 70% */
+          rgba(239,68,68,.70)     /* red-500 con 70% */
+        ),
+        url(${import.meta.env.BASE_URL}faique.jpg)
+      `
+    }}
+  />
+  {/* ¡Sin opacity aquí, así no tapa a los hijos! */}
 
   {/* Contenido encima */}
   <div className="relative mx-auto max-w-7xl px-6 py-14 text-white">
