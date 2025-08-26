@@ -299,7 +299,9 @@ async function descargarPDF() {
     <p className="mt-4 text-xs text-white/80">Actualizado: {hoy}</p>
   </div>
 </header>
-      <section className="controls relative z-10 mx-auto max-w-7xl px-6 mt-6">
+      <section className="controls sticky top-0 z-30 mx-auto max-w-7xl px-6 mt-0
+             border-b border-white/10 bg-white/60 backdrop-blur
+             supports-[backdrop-filter]:bg-white/50">
         <div className="grid grid-cols-1 gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm sm:grid-cols-3">
           <div className="sm:col-span-2">
             <label className="block text-sm font-medium text-gray-700">Buscar</label>
