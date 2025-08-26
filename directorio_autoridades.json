@@ -464,7 +464,7 @@
   {
     "id": "ial-38",
     "nombre": "Vicente Silva Lozada",
-    "cargo": "Cr",
+    "cargo": "Comisario",
     "dependencia": "Pnp Smf",
     "categoria": "IAL-DIS 2024",
     "email": "",
@@ -478,7 +478,7 @@
   {
     "id": "ial-39",
     "nombre": "Yeison Carlos Suquilanda Yovera",
-    "cargo": "Cr",
+    "cargo": "Comisario",
     "dependencia": "Pnp Smf",
     "categoria": "IAL-DIS 2024",
     "email": "",
@@ -530,20 +530,6 @@
     "periodo": "2024",
     "ubicacion": "",
     "orden": 42
-  },
-  {
-    "id": "ial-45",
-    "nombre": "Ronald Esusebio Sullon Ramirez",
-    "cargo": "Asistente Atm",
-    "dependencia": "Municipalidad Distrital De San Miguel De El Faique",
-    "categoria": "IAL-DIS 2024",
-    "email": "",
-    "telefono": "921143934",
-    "whatsapp": "+51921143934",
-    "foto": "",
-    "periodo": "2024",
-    "ubicacion": "",
-    "orden": 45
   },
   {
     "id": "ial-46",
