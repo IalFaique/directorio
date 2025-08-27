@@ -12,7 +12,7 @@ const initialOficiales = [
     whatsapp: "+51900000000",
     foto: "",
     periodo: "2023 – 2026",
-    ubicacion: "Palacio Municipal, 2° piso",
+    ubicacion: "Palacio Municipal, San Miguel de El Faique",
     orden: 1,
   },
   {
@@ -20,27 +20,27 @@ const initialOficiales = [
     nombre: "Econ. Lucero Xixa Rodríguez Gonzales",
     cargo: "Gerente Municipal",
     dependencia: "Gerencia Municipal",
-    categoria: "Alta Dirección",
+    categoria: "Municipalidad",
     email: "gerenciamunicipal@munismf.gob.pe",
     telefono: "073-000010",
     whatsapp: "+51900000010",
     foto: "",
     periodo: "2025",
-    ubicacion: "Palacio Municipal, 2° piso",
+    ubicacion: "Palacio Municipal, San Miguel de El Faique",
     orden: 2,
   },
   {
     id: "gdsysm-01",
     nombre: "Pedro Augusto Ramírez Neira",
     cargo: "Gerente de Desarrollo Social y Servicios Municipales",
-    dependencia: "GDSySM",
-    categoria: "Gerencias y Subgerencias",
-    email: "gdsysm@munismf.gob.pe",
+    dependencia: "Gerencia de Desarrollo Social y Servicios Municipales",
+    categoria: "Municipalidad",
+    email: "ulemunifaique@gmail.com",
     telefono: "073-000020",
     whatsapp: "+51973714680",
     foto: "",
     periodo: "2025",
-    ubicacion: "Palacio Municipal, 2° piso",
+    ubicacion: "Palacio Municipal, San Miguel de El Faique",
     orden: 3,
   },
 ];
@@ -344,7 +344,7 @@ async function descargarPDF() {
 
       <footer className="mx-auto max-w-7xl px-6 pb-10 text-sm text-gray-500">
         <div className="rounded-2xl border border-gray-200 bg-white p-5">
-          <p>* Este directorio es referencial. Para rectificaciones o actualizaciones, comuníquese con el Secretario de la IAL.</p>
+          <p>*Este directorio es referencial. Para rectificaciones o actualizaciones, comuníquese con el Secretario de la IAL.</p>
         </div>
       </footer>
           </div>
