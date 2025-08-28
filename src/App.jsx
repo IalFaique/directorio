@@ -388,7 +388,7 @@ function TarjetaOficial({ o }) {
   const logosPorCategoria = {
     "Autoridades Ediles": "escudo-mdsmf.png",
     "Municipalidad": "escudo-mdsmf.png",
-    "IAL-DIS 2024": "logo-ialdis.png",
+    "Clas Faique": "minsa.png",
     "Tenientes Gobernadores": "logo-tenientes.png",
     "Programas Sociales": "logo-pvlsocial.png",
     // agrega más según necesites
