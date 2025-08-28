@@ -398,26 +398,28 @@ function TarjetaOficial({ o }) {
 
   // Avatar dinámico
   const avatar = hasFoto ? (
-    <img
-      src={o.foto}
-      alt={`Foto de ${o.nombre}`}
-      className="h-16 w-16 rounded-2xl object-cover ring-2 ring-white"
-    />
-  ) : logoCategoria ? (
-    <div className="flex h-16 w-16 items-center justify-center rounded-2xl 
-                    bg-gradient-to-br from-emerald-600 to-lime-500 ring-2 ring-white">
-    <img
-      src={`${import.meta.env.BASE_URL}${logoCategoria}`}
-      alt={`Logo ${o.categoria}`}
-      className="h-9 w-9 object-contain"
-    />
+  <img
+    src={o.foto}
+    alt={`Foto de ${o.nombre}`}
+    className="h-16 w-16 rounded-2xl object-cover ring-2 ring-white"
+  />
+) : logoCategoria ? (
+  <div className="flex h-16 w-16 items-center justify-center rounded-2xl 
+                  bg-gradient-to-br from-emerald-600 to-lime-500 ring-2 ring-white">
+    <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-white/90 p-1">
+      <img
+        src={`${import.meta.env.BASE_URL}${logoCategoria}`}
+        alt={`Logo ${o.categoria}`}
+        className="max-h-10 max-w-10 object-contain"
+      />
     </div>
-  ) : (
-    <div className="flex h-16 w-16 items-center justify-center rounded-2xl 
-                    bg-gradient-to-br from-emerald-600 to-lime-500 text-white ring-2 ring-white">
-      <span className="text-lg font-bold">{initialsFromName(o.nombre) || "?"}</span>
-    </div>
-  );
+  </div>
+) : (
+  <div className="flex h-16 w-16 items-center justify-center rounded-2xl 
+                  bg-gradient-to-br from-emerald-600 to-lime-500 text-white ring-2 ring-white">
+    <span className="text-lg font-bold">{initialsFromName(o.nombre) || "?"}</span>
+  </div>
+);
   return (
     <article className="card group relative rounded-3xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md">
       <div className="flex items-start gap-4">
