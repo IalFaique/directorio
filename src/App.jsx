@@ -386,7 +386,7 @@ function TarjetaOficial({ o }) {
 
   // Mapa de logos por categoría
   const logosPorCategoria = {
-    "Autoridades Ediles": "escudo-mdsmf.png",
+    "Autoridades Ediles": "bandera.png",
     "Municipalidad": "escudo-mdsmf.png",
     "Clas Faique": "minsa.png",
     "Teniente Gobernador": "mininter.png",
