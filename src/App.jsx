@@ -406,11 +406,11 @@ function TarjetaOficial({ o }) {
   ) : logoCategoria ? (
     <div className="flex h-16 w-16 items-center justify-center rounded-2xl 
                     bg-gradient-to-br from-emerald-600 to-lime-500 ring-2 ring-white">
-      <img
-        src={`${import.meta.env.BASE_URL}${logoCategoria}`}
-        alt={`Logo ${o.categoria}`}
-        className="h-10 w-10 object-contain"
-      />
+    <img
+      src={`${import.meta.env.BASE_URL}${logoCategoria}`}
+      alt={`Logo ${o.categoria}`}
+      className="h-9 w-9 object-contain"
+    />
     </div>
   ) : (
     <div className="flex h-16 w-16 items-center justify-center rounded-2xl 
