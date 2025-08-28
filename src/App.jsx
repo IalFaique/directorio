@@ -326,7 +326,7 @@ async function descargarPDF() {
 
       <div className="mx-auto max-w-7xl px-6 mt-3">
         <div className="flex flex-wrap gap-2">
-          {["todas","Autoridades Ediles","Municipalidad","IAL-DIS 2024","Tenientes Gobernadores"].map((c) => (
+          {["todas","Autoridades Ediles","Municipalidad","Tenientes Gobernadores",].map((c) => (
             <button
               key={c}
               onClick={() => setCat(c)}
