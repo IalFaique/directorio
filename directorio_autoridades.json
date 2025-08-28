@@ -6,11 +6,11 @@
     "dependencia": "Municipalidad Distrital De San Miguel De El Faique",
     "categoria": "Municipalidad",
     "email": "",
-    "telefono": "937560701",
-    "whatsapp": "+51937560701",
+    "telefono": "912805593",
+    "whatsapp": "+51912805593",
     "foto": "",
-    "periodo": "2025",
-    "ubicacion": "",
+    "periodo": "2023-2026",
+    "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 2
   },
   {
@@ -23,8 +23,8 @@
     "telefono": "996731417",
     "whatsapp": "+51996731417",
     "foto": "",
-    "periodo": "2025",
-    "ubicacion": "",
+    "periodo": "2023-2026",
+    "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 3
   },
   {
@@ -114,7 +114,7 @@
   {
     "id": "ial-10",
     "nombre": "Azucena Rosas Minchola",
-    "cargo": "Asesor de Proyectos",
+    "cargo": "Coordinadora de Proyectos",
     "dependencia": "Ong-Cipca",
     "categoria": "Ong Cipca",
     "email": "",
