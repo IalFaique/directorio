@@ -22,7 +22,7 @@ const initialOficiales = [
     dependencia: "Gerencia Municipal",
     categoria: "Municipalidad",
     email: "gerenciamunicipal@munifaique.com",
-    telefono: "073-000010",
+    telefono: "953787647",
     whatsapp: "+51953787647",
     foto: "",
     periodo: "2025",
