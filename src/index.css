@@ -1,0 +1,38 @@
+/* Accesibilidad: foco visible */
+*:focus-visible {
+  outline: 3px solid #10b981;
+  /* verde emerald */
+  outline-offset: 2px;
+}
+
+/* Respeta usuarios con reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Estilos de impresión */
+@media print {
+
+  header,
+  .controls,
+  footer {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 12mm;
+  }
+}
