@@ -404,16 +404,16 @@ function TarjetaOficial({ o }) {
     className="h-16 w-16 rounded-2xl object-cover ring-2 ring-white"
   />
 ) : logoCategoria ? (
-  <div className="flex h-16 w-16 items-center justify-center rounded-2xl 
-                  bg-gradient-to-br from-emerald-600 to-lime-500 ring-2 ring-white">
-    <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-white/90 p-1">
-      <img
-        src={`${import.meta.env.BASE_URL}${logoCategoria}`}
-        alt={`Logo ${o.categoria}`}
-        className="max-h-10 max-w-10 object-contain"
-      />
-    </div>
+<div className="flex h-16 w-16 items-center justify-center rounded-2xl 
+                bg-emerald-600 ring-2 ring-white">
+  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-white p-1">
+    <img
+      src={`${import.meta.env.BASE_URL}${logoCategoria}`}
+      alt={`Logo ${o.categoria}`}
+      className="max-h-10 max-w-10 object-contain"
+    />
   </div>
+</div>
 ) : (
   <div className="flex h-16 w-16 items-center justify-center rounded-2xl 
                   bg-gradient-to-br from-emerald-600 to-lime-500 text-white ring-2 ring-white">
