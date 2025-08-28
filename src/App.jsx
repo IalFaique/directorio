@@ -391,6 +391,7 @@ function TarjetaOficial({ o }) {
     "Clas Faique": "minsa.png",
     "Teniente Gobernador": "mininter.png",
     "Ong Cipca": "cipca.png",
+    "Nucleo Educativo": "ugel.jpg",
     // agrega más según necesites
   };
 
