@@ -97,10 +97,10 @@ export default function App() {
     cargar();
   }, []);
 
-  const categorias = useMemo(() => {
-    const set = new Set(oficiales.map((o) => o.categoria).filter(Boolean));
-    return ["todas", ...Array.from(set)];
-  }, [oficiales]);
+const categorias = useMemo(() => {
+  const set = new Set(oficiales.map((o) => o.categoria).filter(Boolean));
+  return ["todas", ...Array.from(set)];
+}, [oficiales]);
 
   const filtrados = useMemo(() => {
     const nq = normalize(q);
@@ -323,23 +323,29 @@ async function descargarPDF() {
           </div>
         </div>
       </section>
+
       <div className="mx-auto max-w-7xl px-6 mt-3">
         <div className="flex flex-wrap gap-2">
-          {["todas","Autoridades Ediles","Municipalidad","Tenientes Gobernadores",].map((c) => (
-            <button
-              key={c}
-              onClick={() => setCat(c)}
-              className={`rounded-full px-3 py-1 text-sm border transition ${cat===c ? "bg-emerald-600 text-white border-emerald-600" : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"}`}
-            >
-              {c}
-            </button>
-          ))}
+          {categorias.map((c) => (
+      <button
+     key={c}
+    onClick={() => setCat(c)}
+    className={`rounded-full px-3 py-1 text-sm border transition ${
+      cat === c
+        ? "bg-emerald-600 text-white border-emerald-600"
+        : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
+    }`}
+  >
+    {c}
+  </button>
+))}
         </div>
       </div>
 
       <main className="mx-auto max-w-7xl px-6 py-8">
         <DirectorioGrid items={filtrados} />
       </main>
+
       <footer className="mx-auto max-w-7xl px-6 pb-10 text-sm text-gray-500">
         <div className="rounded-2xl border border-gray-200 bg-white p-5">
           <p>*Este directorio es referencial. Para rectificaciones o actualizaciones, comuníquese con el Secretario de la IAL.</p>
