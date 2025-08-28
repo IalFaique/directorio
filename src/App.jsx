@@ -392,6 +392,7 @@ function TarjetaOficial({ o }) {
     "Teniente Gobernador": "mininter.png",
     "Ong Cipca": "cipca.png",
     "Nucleo Educativo": "ugel.jpg",
+    "Programas Sociales": "midis.jpg",
     // agrega más según necesites
   };
 
