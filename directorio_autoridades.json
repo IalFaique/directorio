@@ -192,7 +192,7 @@
     "whatsapp": "+51968941169",
     "foto": "",
     "periodo": "2024",
-    "ubicacion": "",
+    "ubicacion": "Oficina Nucleo Educativo, San Miguel de El Faique",
     "orden": 15
   },
   {
@@ -206,7 +206,7 @@
     "whatsapp": "+51941883769",
     "foto": "",
     "periodo": "2024",
-    "ubicacion": "",
+    "ubicacion": "Oficina Nucleo Educativo, San Miguel de El Faique",
     "orden": 16
   },
   {
@@ -220,7 +220,7 @@
     "whatsapp": "+51920010743",
     "foto": "",
     "periodo": "2024",
-    "ubicacion": "",
+    "ubicacion": "Oficina Nucleo Educativo, San Miguel de El Faique",
     "orden": 17
   },
   {
@@ -234,7 +234,7 @@
     "whatsapp": "+51969737223",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Oficina Subprefectura, San Miguel de El Faique",
     "orden": 18
   },
   {
@@ -242,13 +242,13 @@
     "nombre": "Hector Raul Lizana Garcia",
     "cargo": "Alcalde",
     "dependencia": "Municipalidad Del Centro Poblado El Higueron",
-    "categoria": "IAL-DIS 2024",
+    "categoria": "Autoridades Ediles",
     "email": "",
     "telefono": "938517161",
     "whatsapp": "+51938517161",
     "foto": "",
     "periodo": "2024",
-    "ubicacion": "",
+    "ubicacion": "Palacio de Alcaldia, Higueron",
     "orden": 19
   },
   {
@@ -256,7 +256,7 @@
     "nombre": "Luis Clever Labán Choquehuanca",
     "cargo": "Gestor Distrital",
     "dependencia": "Cunamas",
-    "categoria": "IAL-DIS 2024",
+    "categoria": "Programas Sociales",
     "email": "",
     "telefono": "948484388",
     "whatsapp": "+51948484388",
@@ -270,7 +270,7 @@
     "nombre": "Boris Wilson Arrieta Ramirez",
     "cargo": "Gestor Distrital",
     "dependencia": "Programa Juntos",
-    "categoria": "IAL-DIS 2024",
+    "categoria": "Programas Sociales",
     "email": "",
     "telefono": "925304942",
     "whatsapp": "+51925304942",
@@ -284,7 +284,7 @@
     "nombre": "Richard Ipanaqué Nizama",
     "cargo": "Gestor Distrital",
     "dependencia": "Qali Warma",
-    "categoria": "IAL-DIS 2024",
+    "categoria": "Programas Sociales",
     "email": "",
     "telefono": "997521309",
     "whatsapp": "+51997521309",
@@ -424,12 +424,12 @@
     "nombre": "Efrain Santos Tocto",
     "cargo": "Alcalde",
     "dependencia": "Municipalidad Del Centro Poblado Calangla",
-    "categoria": "IAL-DIS 2024",
+    "categoria": "Autoridades Ediles",
     "email": "",
     "telefono": "984660464",
     "whatsapp": "+51984660464",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 34
   },
