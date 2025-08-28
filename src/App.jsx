@@ -389,7 +389,7 @@ function TarjetaOficial({ o }) {
     "Autoridades Ediles": "escudo-mdsmf.png",
     "Municipalidad": "escudo-mdsmf.png",
     "Clas Faique": "minsa.png",
-    "Tenientes Gobernadores": "logo-tenientes.png",
+    "Teniente Gobernador": "mininter.png",
     "Programas Sociales": "logo-pvlsocial.png",
     // agrega más según necesites
   };
