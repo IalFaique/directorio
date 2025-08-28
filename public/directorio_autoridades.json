@@ -52,7 +52,7 @@
     "whatsapp": "+51991405679",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 5
   },
   {
@@ -66,7 +66,7 @@
     "whatsapp": "+51955969319",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Establecimiento de Salud, San Miguel de El Faique",
     "orden": 6
   },
   {
@@ -80,7 +80,7 @@
     "whatsapp": "+51932132051",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Despacho de Juez de Paz, San Miguel de El Faique",
     "orden": 7
   },
   {
@@ -90,25 +90,25 @@
     "dependencia": "Clas Faique",
     "categoria": "Clas Faique",
     "email": "",
-    "telefono": "969920072",
-    "whatsapp": "+51969920072",
+    "telefono": "992578990",
+    "whatsapp": "+51992578990",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Establecimiento de Salud, San Miguel de El Faique",
     "orden": 8
   },
   {
     "id": "ial-9",
-    "nombre": "Irina Tatiana Sanchez Vasquez",
+    "nombre": "Eliana Esteves Peralta",
     "cargo": "Gerente",
-    "dependencia": "Clas El Higuerón",
-    "categoria": "IAL-DIS 2024",
+    "dependencia": "Clas Faique",
+    "categoria": "Clas Faique",
     "email": "",
-    "telefono": "961021271",
-    "whatsapp": "+51961021271",
+    "telefono": "943064892",
+    "whatsapp": "+51943064892",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Establecimiento de Salud, San Miguel de El Faique",
     "orden": 9
   },
   {
@@ -117,18 +117,18 @@
     "cargo": "Coordinadora de Proyectos",
     "dependencia": "Ong-Cipca",
     "categoria": "Ong Cipca",
-    "email": "",
-    "telefono": "973714680",
-    "whatsapp": "+51973714680",
+    "email": "arosas@cipca.pe",
+    "telefono": "976998543",
+    "whatsapp": "+51976998543",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Calle San Ignacio de Loyola N° 300 Urb. Miraflores.",
     "orden": 10
   },
   {
     "id": "ial-11",
     "nombre": "Pamela Panta Ordinola",
-    "cargo": "Jefa De Demuna",
+    "cargo": "Subgerente de DEMUNA y OMAPED",
     "dependencia": "Municipalidad Distrital De San Miguel De El Faique",
     "categoria": "Municipalidad",
     "email": "",
@@ -136,7 +136,7 @@
     "whatsapp": "+51947921765",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 11
   },
   {
@@ -146,11 +146,11 @@
     "dependencia": "Municipalidad Distrital De San Miguel De El Faique",
     "categoria": "Municipalidad",
     "email": "",
-    "telefono": "961603551",
-    "whatsapp": "+51961603551",
+    "telefono": "973724745",
+    "whatsapp": "+51973724745",
     "foto": "",
     "periodo": "2025",
-    "ubicacion": "",
+    "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 12
   },
   {
@@ -160,11 +160,11 @@
     "dependencia": "Municipalidad Distrital De San Miguel De El Faique",
     "categoria": "Municipalidad",
     "email": "",
-    "telefono": "951485814",
-    "whatsapp": "+51951485814",
+    "telefono": "926044067",
+    "whatsapp": "+51926044067",
     "foto": "",
     "periodo": "2024",
-    "ubicacion": "",
+    "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 13
   },
   {
@@ -178,7 +178,7 @@
     "whatsapp": "+51942493300",
     "foto": "",
     "periodo": "2024",
-    "ubicacion": "",
+    "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 14
   },
   {
