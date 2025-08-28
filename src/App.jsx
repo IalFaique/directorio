@@ -323,7 +323,6 @@ async function descargarPDF() {
           </div>
         </div>
       </section>
-
       <div className="mx-auto max-w-7xl px-6 mt-3">
         <div className="flex flex-wrap gap-2">
           {["todas","Autoridades Ediles","Municipalidad","Tenientes Gobernadores",].map((c) => (
@@ -341,7 +340,6 @@ async function descargarPDF() {
       <main className="mx-auto max-w-7xl px-6 py-8">
         <DirectorioGrid items={filtrados} />
       </main>
-
       <footer className="mx-auto max-w-7xl px-6 pb-10 text-sm text-gray-500">
         <div className="rounded-2xl border border-gray-200 bg-white p-5">
           <p>*Este directorio es referencial. Para rectificaciones o actualizaciones, comuníquese con el Secretario de la IAL.</p>
