@@ -390,7 +390,7 @@ function TarjetaOficial({ o }) {
     "Municipalidad": "escudo-mdsmf.png",
     "Clas Faique": "minsa.png",
     "Teniente Gobernador": "mininter.png",
-    "Programas Sociales": "logo-pvlsocial.png",
+    "Ong Cipca": "cipca.png",
     // agrega más según necesites
   };
 
