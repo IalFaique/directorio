@@ -393,6 +393,7 @@ function TarjetaOficial({ o }) {
     "Ong Cipca": "cipca.png",
     "Nucleo Educativo": "ugel.jpg",
     "Programas Sociales": "midis.jpg",
+    "Policia": "pnp.png",
     // agrega más según necesites
   };
 
