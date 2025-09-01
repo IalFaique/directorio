@@ -152,6 +152,19 @@
     "periodo": "2025",
     "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 12
+  },{
+    "id": "ial-11a",
+    "nombre": "Luz del Rocio Sanchez Perez",
+    "cargo": "Subgerente de Programas Sociales",
+    "dependencia": "Municipalidad Distrital De San Miguel De El Faique",
+    "categoria": "Municipalidad",
+    "email": "",
+    "telefono": "912185237",
+    "whatsapp": "+51912185237",
+    "foto": "",
+    "periodo": "2025",
+    "ubicacion": "Palacio Municipal, San Miguel de El Faique",
+    "orden": 11
   },
   {
     "id": "ial-13",
@@ -163,7 +176,7 @@
     "telefono": "926044067",
     "whatsapp": "+51926044067",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 13
   },
@@ -177,7 +190,7 @@
     "telefono": "942493300",
     "whatsapp": "+51942493300",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "Palacio Municipal, San Miguel de El Faique",
     "orden": 14
   },
@@ -191,13 +204,13 @@
     "telefono": "968941169",
     "whatsapp": "+51968941169",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "Oficina Nucleo Educativo, San Miguel de El Faique",
     "orden": 15
   },
   {
     "id": "ial-16",
-    "nombre": "Carmelita Del Pilar Abad Mica",
+    "nombre": "Carmelita Del Pilar Abad Meca",
     "cargo": "Especialista De Educación Primaria",
     "dependencia": "Núcleo Distrital De Gestión Educativa",
     "categoria": "Nucleo Educativo",
@@ -205,7 +218,7 @@
     "telefono": "941883769",
     "whatsapp": "+51941883769",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "Oficina Nucleo Educativo, San Miguel de El Faique",
     "orden": 16
   },
@@ -219,7 +232,7 @@
     "telefono": "920010743",
     "whatsapp": "+51920010743",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "Oficina Nucleo Educativo, San Miguel de El Faique",
     "orden": 17
   },
@@ -247,7 +260,7 @@
     "telefono": "938517161",
     "whatsapp": "+51938517161",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "Palacio de Alcaldia, Higueron",
     "orden": 19
   },
@@ -261,7 +274,7 @@
     "telefono": "948484388",
     "whatsapp": "+51948484388",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 20
   },
@@ -275,7 +288,7 @@
     "telefono": "925304942",
     "whatsapp": "+51925304942",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 21
   },
@@ -289,7 +302,7 @@
     "telefono": "997521309",
     "whatsapp": "+51997521309",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 22
   },
@@ -303,7 +316,7 @@
     "telefono": "969080140",
     "whatsapp": "+51969080140",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 25
   },
@@ -373,7 +386,7 @@
     "telefono": "969181427",
     "whatsapp": "+51969181427",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 30
   },
@@ -387,7 +400,7 @@
     "telefono": "973781504",
     "whatsapp": "+51973781504",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 31
   },
@@ -429,7 +442,7 @@
     "telefono": "969732294",
     "whatsapp": "+51969732294",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 38
   },
@@ -443,7 +456,7 @@
     "telefono": "963008258",
     "whatsapp": "+51963008258",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 39
   },
@@ -471,7 +484,7 @@
     "telefono": "931305345",
     "whatsapp": "+51931305345",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 41
   },
@@ -485,7 +498,7 @@
     "telefono": "931194748",
     "whatsapp": "+51931194748",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 42
   },
