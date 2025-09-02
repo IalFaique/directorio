@@ -394,6 +394,7 @@ function TarjetaOficial({ o }) {
     "Nucleo Educativo": "ugel.jpg",
     "Programas Sociales": "midis.jpg",
     "Policia": "pnp.png",
+    "Agente Municipal": "escudo-mdsmf.png",
     // agrega más según necesites
   };
 
