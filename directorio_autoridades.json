@@ -307,20 +307,6 @@
     "orden": 22
   },
   {
-    "id": "ial-25",
-    "nombre": "Víctor Wilfredo Campoverde Guerrero",
-    "cargo": "Director",
-    "dependencia": "Cetpro Esteban Buscemi",
-    "categoria": "IAL-DIS 2024",
-    "email": "",
-    "telefono": "969080140",
-    "whatsapp": "+51969080140",
-    "foto": "",
-    "periodo": "2025",
-    "ubicacion": "",
-    "orden": 25
-  },
-  {
     "id": "ial-29",
     "nombre": "Gloria Yolanda Valdiviezo Arrieta",
     "cargo": "Presidenta",
@@ -330,7 +316,7 @@
     "telefono": "970432141",
     "whatsapp": "+51970432141",
     "foto": "",
-    "periodo": "2024",
+    "periodo": "2025",
     "ubicacion": "",
     "orden": 29
   },
@@ -377,20 +363,6 @@
     "orden": 34
   },
   {
-    "id": "ial-36",
-    "nombre": "Rosita Del Pilar Laban Jimenez",
-    "cargo": "Acompañante Distrital",
-    "dependencia": "Progama De Primera Infancia",
-    "categoria": "IAL-DIS 2024",
-    "email": "",
-    "telefono": "917948135",
-    "whatsapp": "+51917948135",
-    "foto": "",
-    "periodo": "2024",
-    "ubicacion": "",
-    "orden": 36
-  },
-  {
     "id": "ial-38",
     "nombre": "Vicente Silva Lozada",
     "cargo": "Comisario",
@@ -419,20 +391,6 @@
     "orden": 39
   },
   {
-    "id": "ial-40",
-    "nombre": "Diana Huancas Santos",
-    "cargo": "Socia",
-    "dependencia": "Amusaf",
-    "categoria": "IAL-DIS 2024",
-    "email": "",
-    "telefono": "954649355",
-    "whatsapp": "+51954649355",
-    "foto": "",
-    "periodo": "2024",
-    "ubicacion": "",
-    "orden": 40
-  },
-  {
     "id": "ial-41",
     "nombre": "Lening Huancas Huaman",
     "cargo": "Secretario Técnico",
@@ -459,20 +417,6 @@
     "periodo": "2025",
     "ubicacion": "",
     "orden": 42
-  },
-  {
-    "id": "ial-46",
-    "nombre": "Miguel Flores Chinguel",
-    "cargo": "Encargado Del Area Niño",
-    "dependencia": "Clas Smf",
-    "categoria": "IAL-DIS 2024",
-    "email": "",
-    "telefono": "968690011",
-    "whatsapp": "+51968690011",
-    "foto": "",
-    "periodo": "2024",
-    "ubicacion": "",
-    "orden": 46
   },
   {
     "id": "ial-46",
